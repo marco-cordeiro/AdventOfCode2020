@@ -14,8 +14,8 @@ namespace AdventOfCode2020.Console
             services.AddSingleton(x => System.Console.In);
             services.AddSingleton(x => System.Console.Out);
 
-            services.AddTransient<IDataProvider<int>>(ctx => new DataProvider<int>("day{0}_input.txt"));
-            services.AddTransient<IDataProvider<string>>(ctx => new DataProvider<string>("day{0}_input.txt"));
+            services.AddTransient<IDataProvider<int>>(ctx => new DataProvider<int>("data/day{0}_input.txt"));
+            services.AddTransient<IDataProvider<string>>(ctx => new DataProvider<string>("data/day{0}_input.txt"));
             
             services.AddTransient<IAdventCodeDayChallenge, ChallengeDay1>();
         }

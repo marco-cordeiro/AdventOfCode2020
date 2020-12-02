@@ -16,15 +16,12 @@ namespace DataProvider
         public IEnumerable<T> Read(int day)
         {
             using var reader = GetStreamReader(string.Format(_filenameTemplate, day));
-            var data = new List<T>();
 
             while (!reader.EndOfStream)
             {
                 var value = reader.ReadLine();
-                data.Add(ChangeType(value));
+                yield return ChangeType(value);
             }
-
-            return data;
         }
 
         protected T ChangeType(string value)
