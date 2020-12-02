@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DailyChallenges\Day1\Day1.csproj" />
+    <ProjectReference Include="..\DailyChallenges\Day2\Day2Challenge.csproj" />
     <ProjectReference Include="..\DataProvider\DataProvider.csproj" />
     <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>

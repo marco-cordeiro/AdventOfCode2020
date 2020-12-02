@@ -36,12 +36,12 @@ namespace AdventOfCode2020.Day1
             {
                 var (value1, value2) = FindEntriesWithSum(data, 2020);
 
-                _output.WriteLine($"The two entries that sum to 2020 are {value1} and {value2}.");
-                _output.WriteLine($"The product of their multiplication is {value1 * value2}");
+                _output.WriteLine($"\tThe two entries that sum to 2020 are {value1} and {value2}.");
+                _output.WriteLine($"\tThe product of their multiplication is {value1 * value2}");
             }
             catch (AmbiguousMatchException)
             {
-                _output.WriteLine("No solution was found in the data set");
+                _output.WriteLine("\tNo solution was found in the data set");
             }
         }
 
@@ -53,12 +53,12 @@ namespace AdventOfCode2020.Day1
             {
                 var (value1, value2, value3) = Find3EntriesWithSum(data, 2020);
 
-                _output.WriteLine($"The three entries that sum to 2020 are {value1}, {value2} and {value3}.");
-                _output.WriteLine($"The product of their multiplication is {value1 * value2 * value3}");
+                _output.WriteLine($"\tThe three entries that sum to 2020 are {value1}, {value2} and {value3}.");
+                _output.WriteLine($"\tThe product of their multiplication is {value1 * value2 * value3}");
             }
             catch (AmbiguousMatchException)
             {
-                _output.WriteLine("No solution was found in the data set");
+                _output.WriteLine("\tNo solution was found in the data set");
             }
         }
 
