@@ -5,7 +5,7 @@ using System.Linq;
 using AdventOfCode2020.Framework;
 using DataProvider;
 
-namespace AdventOfCode2020.Day2Challenge
+namespace AdventOfCode2020.ChallengeDay2
 {
     public class ChallengeDay2 : IAdventCodeDayChallenge
     {
@@ -35,7 +35,7 @@ namespace AdventOfCode2020.Day2Challenge
             var data = ReadPasswordRecords();
             var validator = _validatorFactory.GetValidator("Can't remember the policy");
             var validPasswords = data.Count(x => validator.IsValid(x));
-            
+
             _output.WriteLine($"\tFound {validPasswords} valid passwords");
         }
 

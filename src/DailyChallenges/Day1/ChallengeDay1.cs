@@ -1,11 +1,10 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using System.Reflection;
 using AdventOfCode2020.Framework;
 using DataProvider;
 
-namespace AdventOfCode2020.Day1
+namespace AdventOfCode2020.ChallengeDay1
 {
     public class ChallengeDay1 : IAdventCodeDayChallenge
     {
@@ -77,7 +76,7 @@ namespace AdventOfCode2020.Day1
 
             throw new AmbiguousMatchException();
         }
-        
+
         protected static (int, int, int) Find3EntriesWithSum(int[] values, int sumValue)
         {
             for (var i = 0; i < values.Length - 2; i++)

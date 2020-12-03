@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AdventOfCode2020.Day2Challenge
+namespace AdventOfCode2020.ChallengeDay2
 {
     public class PasswordValidatorFactory : GenericNamedFactory<IPasswordValidator>
     {
-        public PasswordValidatorFactory(IEnumerable<IPasswordValidator> validators) 
+        public PasswordValidatorFactory(IEnumerable<IPasswordValidator> validators)
             : base(validators, x => x.PolicyName, "sled rental place down the street")
         {
         }
@@ -28,8 +28,8 @@ namespace AdventOfCode2020.Day2Challenge
 
         public T GetValidator(string instanceName)
         {
-            return _validators.TryGetValue(instanceName, out var policy) ? 
-                policy : 
+            return _validators.TryGetValue(instanceName, out var policy) ?
+                policy :
                 _validators[_defaultInstanceName];
         }
     }

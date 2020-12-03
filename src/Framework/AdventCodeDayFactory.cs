@@ -18,7 +18,7 @@ namespace AdventOfCode2020.Framework
 
         public void Execute(int day)
         {
-            var challenge = _services.GetServices<IAdventCodeDayChallenge>().FirstOrDefault(x=>x.Day == day);
+            var challenge = _services.GetServices<IAdventCodeDayChallenge>().FirstOrDefault(x => x.Day == day);
 
             if (challenge is null)
             {

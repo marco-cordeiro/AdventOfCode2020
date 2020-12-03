@@ -1,12 +1,10 @@
-using System.IO;
-using AdventOfCode2020.Day2Challenge;
-using DataProvider;
+using AdventOfCode2020.ChallengeDay2;
 using FluentAssertions;
 using Xunit;
 
-namespace Day2ChallengeTests
+namespace ChallengeDay2Tests
 {
-    public class Day2ChallengeTests
+    public class ChallengeDay2Tests
     {
         [Fact]
         public void Should_Map_PasswordRecord()
@@ -70,7 +68,7 @@ namespace Day2ChallengeTests
                     Max = 3,
                     Char = 'b'
                 },
-                Password = "bcbdefg"
+                Password = "bcdefg"
             };
             var sut = new OfficialTobogganCorporatePolicyValidator();
 

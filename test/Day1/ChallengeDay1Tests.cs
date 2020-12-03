@@ -1,18 +1,17 @@
-using System;
 using System.IO;
-using AdventOfCode2020.Day1;
+using AdventOfCode2020.ChallengeDay1;
 using DataProvider;
 using FluentAssertions;
 using Xunit;
 
-namespace Day1ChallengeTests
+namespace ChallengeDay1Tests
 {
-    public class Day1ChallengeTests
+    public class ChallengeDay1Tests
     {
         [Fact]
         public void Should_Find_The_Product_For_2_Entries_That_Sum_2020()
         {
-            var values = new[] {1721, 979, 366, 299, 675, 1456};
+            var values = new[] { 1721, 979, 366, 299, 675, 1456 };
             var result = MockDayChallenge.FindMultiplicationProductFor2Entries(values, 2020);
             result.Should().Be(514579);
         }
@@ -20,14 +19,14 @@ namespace Day1ChallengeTests
         [Fact]
         public void Should_Find_The_Product_For_3_Entries_That_Sum_2020()
         {
-            var values = new[] {1721, 979, 366, 299, 675, 1456};
+            var values = new[] { 1721, 979, 366, 299, 675, 1456 };
             var result = MockDayChallenge.FindMultiplicationProductFor3Entries(values, 2020);
             result.Should().Be(241861950);
         }
 
         private class MockDayChallenge : ChallengeDay1
         {
-            public MockDayChallenge(IDataProvider<int> dataProvider, TextWriter output) 
+            public MockDayChallenge(IDataProvider<int> dataProvider, TextWriter output)
                 : base(dataProvider, output)
             {
             }

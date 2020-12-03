@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2020.Day2Challenge
+﻿namespace AdventOfCode2020.ChallengeDay2
 {
     public class OfficialTobogganCorporatePolicyValidator : IPasswordValidator
     {
