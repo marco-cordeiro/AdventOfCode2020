@@ -1,5 +1,5 @@
 using System.IO;
-using AdventOfCode2020.ChallengeDay1;
+using AdventOfCode2020;
 using DataProvider;
 using FluentAssertions;
 using Xunit;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AdventOfCode2020.ChallengeDay2
+namespace AdventOfCode2020
 {
     public class PasswordValidatorFactory : GenericNamedFactory<IPasswordValidator>
     {

@@ -15,6 +15,7 @@
     <ProjectReference Include="..\DailyChallenges\Day1\ChallengeDay1.csproj" />
     <ProjectReference Include="..\DailyChallenges\Day2\ChallengeDay2.csproj" />
     <ProjectReference Include="..\DailyChallenges\Day3\ChallengeDay3.csproj" />
+    <ProjectReference Include="..\DailyChallenges\Day4\ChallengeDay4.csproj" />
     <ProjectReference Include="..\DataProvider\DataProvider.csproj" />
     <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>

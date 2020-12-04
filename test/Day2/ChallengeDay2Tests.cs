@@ -1,4 +1,4 @@
-using AdventOfCode2020.ChallengeDay2;
+using AdventOfCode2020;
 using FluentAssertions;
 using Xunit;
 

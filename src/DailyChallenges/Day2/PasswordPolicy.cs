@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2020.ChallengeDay2
+﻿namespace AdventOfCode2020
 {
     public record PasswordPolicy
     {

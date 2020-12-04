@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode2020.ChallengeDay2
+namespace AdventOfCode2020
 {
     public static class PasswordRecordMapper
     {

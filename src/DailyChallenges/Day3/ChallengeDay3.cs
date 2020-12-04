@@ -3,7 +3,7 @@ using System.Linq;
 using AdventOfCode2020.Framework;
 using DataProvider;
 
-namespace AdventOfCode2020.ChallengeDay3
+namespace AdventOfCode2020
 {
     public class ChallengeDay3 : IAdventCodeDayChallenge
     {

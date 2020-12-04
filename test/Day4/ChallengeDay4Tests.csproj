@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\DailyChallenges\Day3\ChallengeDay3.csproj" />
+    <ProjectReference Include="..\..\src\DailyChallenges\Day4\ChallengeDay4.csproj" />
   </ItemGroup>
 
 </Project>

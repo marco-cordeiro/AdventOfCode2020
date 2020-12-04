@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace AdventOfCode2020.ChallengeDay3
+namespace AdventOfCode2020
 {
     public static class ForestMapExtensions
     {

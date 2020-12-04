@@ -4,7 +4,7 @@ using System.Reflection;
 using AdventOfCode2020.Framework;
 using DataProvider;
 
-namespace AdventOfCode2020.ChallengeDay1
+namespace AdventOfCode2020
 {
     public class ChallengeDay1 : IAdventCodeDayChallenge
     {

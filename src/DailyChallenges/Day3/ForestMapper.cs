@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AdventOfCode2020.ChallengeDay3
+namespace AdventOfCode2020
 {
     public static class ForestMapper
     {

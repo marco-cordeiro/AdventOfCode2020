@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using AdventOfCode2020.ChallengeDay3;
+using AdventOfCode2020;
 using FluentAssertions;
 using Xunit;
 
