@@ -15,9 +15,9 @@ namespace DailyChallengesTests
             var result = GroupAnswersReader.CountAllAnswersForGroups(_data).ToArray();
 
             result.Should().HaveCount(5);
-            result.Should().BeEquivalentTo(new[] {3, 3, 3, 1, 1});
-        }     
-        
+            result.Should().BeEquivalentTo(new[] { 3, 3, 3, 1, 1 });
+        }
+
         [Fact]
         public void Should_Count_All_Common_Answers_For_All_Groups()
         {
@@ -25,7 +25,7 @@ namespace DailyChallengesTests
             var result = GroupAnswersReader.CountAllSameAnswersForGroups(_data).ToArray();
 
             result.Should().HaveCount(5);
-            result.Should().BeEquivalentTo(new[] {3, 0, 1, 1, 1});
+            result.Should().BeEquivalentTo(new[] { 3, 0, 1, 1, 1 });
         }
 
         private readonly IEnumerable<string> _data = new[]

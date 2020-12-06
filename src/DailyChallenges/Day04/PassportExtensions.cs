@@ -8,7 +8,7 @@ namespace AdventOfCode2020.DailyChallenges.Day04
         private static readonly Regex HairColorRegex = new Regex("^#[\\da-f]{6}$");
         private static readonly Regex PassportIdRegex = new Regex("^\\d{9}$");
         private static readonly Regex EyeColorRegex = new Regex("amb|blu|brn|gry|grn|hzl|oth");
-        
+
         public static bool IsValid(this Passport passport, bool strict = false)
         {
             return passport.TryGetValue("byr", out var byr) &&
@@ -17,8 +17,8 @@ namespace AdventOfCode2020.DailyChallenges.Day04
                    passport.TryGetValue("hgt", out var hgt) &&
                    passport.TryGetValue("hcl", out var hcl) &&
                    passport.TryGetValue("ecl", out var ecl) &&
-                   passport.TryGetValue("pid", out var pid) && 
-                   (!strict || 
+                   passport.TryGetValue("pid", out var pid) &&
+                   (!strict ||
                     (
                         ValidateBirthYear(byr) &&
                         ValidateIssueYear(iyr) &&
@@ -34,10 +34,10 @@ namespace AdventOfCode2020.DailyChallenges.Day04
         {
             if (int.TryParse(value, out var year))
                 return year >= 1920 && year <= 2002;
-            
+
             return false;
         }
-        
+
         private static bool ValidateIssueYear(string value)
         {
             if (int.TryParse(value, out var year))
@@ -45,7 +45,7 @@ namespace AdventOfCode2020.DailyChallenges.Day04
 
             return false;
         }
-        
+
         private static bool ValidateExpirationYear(string value)
         {
             if (int.TryParse(value, out var year))
@@ -59,7 +59,7 @@ namespace AdventOfCode2020.DailyChallenges.Day04
             var match = HeightRegex.Match(value);
             if (match.Groups.Count != 3)
                 return false;
-            
+
             if (!int.TryParse(match.Groups[1].Value, out var height))
                 return false;
 
@@ -80,12 +80,12 @@ namespace AdventOfCode2020.DailyChallenges.Day04
         {
             return HairColorRegex.IsMatch(value);
         }
-        
+
         private static bool ValidateEyeColor(string value)
         {
             return EyeColorRegex.IsMatch(value);
         }
-        
+
         private static bool ValidatePassportId(string value)
         {
             return PassportIdRegex.IsMatch(value);

@@ -24,8 +24,8 @@ namespace AdventOfCode2020.DailyChallenges.Day06
 
                 yield return commonAnswers?.Count() ?? 0;
             }
-        }       
-        
+        }
+
         public static IEnumerable<int> CountAllAnswersForGroups(IEnumerable<string> data)
         {
             var passport = new List<int>();
@@ -53,7 +53,7 @@ namespace AdventOfCode2020.DailyChallenges.Day06
         private static IEnumerable<IEnumerable<string>> StreamAnswersPerGroup(IEnumerable<string> data)
         {
             var answers = new List<string>();
-            
+
             foreach (var line in data)
             {
                 // an empty line means that the group is over
@@ -66,7 +66,7 @@ namespace AdventOfCode2020.DailyChallenges.Day06
 
                 answers.Add(line);
             }
-            
+
             // just check if there is still a group answers in the buffer
             if (answers.Count > 0)
                 yield return answers;

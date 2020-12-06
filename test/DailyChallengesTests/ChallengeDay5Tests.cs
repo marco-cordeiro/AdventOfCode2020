@@ -8,17 +8,17 @@ namespace DailyChallengesTests
     {
         [Theory]
         [InlineData("FBFBBFFRLR", 44, 5)]
-        [InlineData("BFFFBBFRRR",70, 7)]
-        [InlineData("FFFBBBFRRR",14, 7)]
-        [InlineData("BBFFBBFRLL",102, 4)]
+        [InlineData("BFFFBBFRRR", 70, 7)]
+        [InlineData("FFFBBBFRRR", 14, 7)]
+        [InlineData("BBFFBBFRLL", 102, 4)]
         public void Should_Map_Valid_BoardingPass(string boardingCode, int expetectedRow, int expectedCol)
         {
             var boardingPass = BoardingPassMapper.Map(boardingCode);
 
             boardingPass.Row.Should().Be(expetectedRow);
             boardingPass.Col.Should().Be(expectedCol);
-        }       
-        
+        }
+
         [Theory]
         [InlineData(44, 5, 357)]
         [InlineData(70, 7, 567)]

@@ -19,7 +19,7 @@ namespace DailyChallengesTests
         [Fact]
         public void Passport_Should_Be_Valid()
         {
-            var passport = (Passport) new Dictionary<string, string>
+            var passport = (Passport)new Dictionary<string, string>
             {
                 {"byr", "Birth Year"},
                 {"iyr", "Issue Year"},
@@ -56,7 +56,7 @@ namespace DailyChallengesTests
                 {"pid", "Passport ID"}
             };
             data.Remove(missingField);
-            var passport = (Passport) data;
+            var passport = (Passport)data;
 
             var result = passport.IsValid();
 
@@ -73,7 +73,7 @@ namespace DailyChallengesTests
             // all passports should be valid
             validPassports.Should().Be(passports.Length);
         }
-        
+
         [Fact]
         public void Passports_Should_Fail_Strict_Validation()
         {

@@ -32,7 +32,7 @@ namespace AdventOfCode2020.DailyChallenges.Day05
         private void ResolvePart1(IEnumerable<BoardingPass> boardingPasses)
         {
             var highestBoardingPassId = boardingPasses.Max(x => x.Id);
-            
+
             _output.WriteLine($"\tBoarding Pass {highestBoardingPassId} is the highest id");
         }
 
@@ -46,7 +46,7 @@ namespace AdventOfCode2020.DailyChallenges.Day05
                 {
                     _output.WriteLine($"\tYour boarding pass id is {previousBoardingPassId + 1}");
                 }
-                
+
                 previousBoardingPassId = boardingPass.Id;
             }
 

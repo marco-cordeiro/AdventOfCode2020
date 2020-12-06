@@ -24,7 +24,7 @@ namespace AdventOfCode2020.DailyChallenges.Day04
             _output.WriteLine($"Advent of Code day {Day}");
 
             var passports = PassportReader.ReadPassports(_dataProvider.Read(Day)).ToArray();
-                
+
             ResolvePart1(passports);
             ResolvePart2(passports);
         }

@@ -3,12 +3,12 @@
     public record PasswordRecord
     {
         public PasswordRecord()
-        {
-            Policy = new PasswordPolicy();
-            Password = string.Empty;
-        }
-
-        public PasswordPolicy Policy { get; init; }
-        public string Password { get; init; }
+    {
+        Policy = new PasswordPolicy();
+        Password = string.Empty;
     }
+
+    public PasswordPolicy Policy { get; init; }
+    public string Password { get; init; }
+}
 }

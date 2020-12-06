@@ -9,6 +9,6 @@ namespace DailyChallengesTests
         public void Should_Test_Something()
         {
             true.Should().BeFalse("Implement tests here");
-        }       
+        }
     }
 }
