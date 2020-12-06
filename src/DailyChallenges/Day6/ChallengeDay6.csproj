@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>AdventOfCode2020.ChallengeDay5</AssemblyName>
+    <AssemblyName>AdventOfCode2020.ChallengeDay6</AssemblyName>
     <RootNamespace>AdventOfCode2020</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,10 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\day5_input.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\dayX_input.txt">
+    <None Update="Data\day6_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
