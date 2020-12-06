@@ -5,6 +5,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>AdventOfCode2020.Console</AssemblyName>
     <RootNamespace>AdventOfCode2020.Console</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,12 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DailyChallenges\Day1\ChallengeDay1.csproj" />
-    <ProjectReference Include="..\DailyChallenges\Day2\ChallengeDay2.csproj" />
-    <ProjectReference Include="..\DailyChallenges\Day3\ChallengeDay3.csproj" />
-    <ProjectReference Include="..\DailyChallenges\Day4\ChallengeDay4.csproj" />
-    <ProjectReference Include="..\DailyChallenges\Day5\ChallengeDay5.csproj" />
-    <ProjectReference Include="..\DailyChallenges\Day6\ChallengeDay6.csproj" />
+    <ProjectReference Include="..\DailyChallenges\DailyChallenges.csproj" />
     <ProjectReference Include="..\DataProvider\DataProvider.csproj" />
     <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>
