@@ -20,6 +20,7 @@ namespace AdventOfCode2020.Console
             services.AddDay2();
             services.AddTransient<IAdventCodeDayChallenge, ChallengeDay3>();
             services.AddTransient<IAdventCodeDayChallenge, ChallengeDay4>();
+            services.AddTransient<IAdventCodeDayChallenge, ChallengeDay5>();
         }
 
         public static void AddDay2(this IServiceCollection services)

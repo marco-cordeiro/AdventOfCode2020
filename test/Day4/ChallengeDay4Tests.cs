@@ -6,7 +6,7 @@ using Xunit;
 
 namespace ChallengeDay4Tests
 {
-    public class ChallengeDay3Tests
+    public class ChallengeDay4Tests
     {
         [Fact]
         public void Should_Map_Passports()
