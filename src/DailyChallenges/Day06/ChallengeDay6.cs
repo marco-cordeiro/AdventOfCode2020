@@ -33,14 +33,14 @@ namespace AdventOfCode2020.DailyChallenges.Day06
         {
             var groupAnswers = GroupAnswersReader.CountAllAnswersForGroups(data).ToArray();
             var result = groupAnswers.Sum();
-            _output.WriteLine($"\tThe sum of all group answers counts is {result}");
+            _output.WriteLine($"\tThe sum of all group answers count is {result}");
         }
 
         private void ResolvePart2(IEnumerable<string> data)
         {
             var groupAnswers = GroupAnswersReader.CountAllSameAnswersForGroups(data).ToArray();
             var result = groupAnswers.Sum();
-            _output.WriteLine($"\tThe sum of all group common answers counts is {result}");
+            _output.WriteLine($"\tThe sum of all group common answers count is {result}");
         }
 
     }
