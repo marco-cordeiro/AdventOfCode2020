@@ -1,50 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using AdventOfCode2020.Framework;
-using DataProvider;
 
 namespace AdventOfCode2020.DailyChallenges.Day07
 {
-    public class ChallengeDay7 : IAdventCodeDayChallenge
-    {
-        private readonly IDataProvider<string> _dataProvider;
-        private readonly TextWriter _output;
-
-        public ChallengeDay7(IDataProvider<string> dataProvider, TextWriter output)
-        {
-            _dataProvider = dataProvider;
-            _output = output;
-        }
-
-        public int Day => 7;
-
-        public void Execute()
-        {
-            _output.WriteLine($"Advent of Code day {Day}");
-
-            var data = BagRuleReader.ReadRules(_dataProvider.Read(Day));
-
-            ResolvePart1(data);
-            ResolvePart2(data);
-        }
-
-        private void ResolvePart1(ILookup<string, (int, string)> rules)
-        {
-            var result = BagRuleReader.CountBagsThatCanHold("shiny gold", rules);
-            _output.WriteLine($"\t{result} bag colors can eventually contain at least one shiny gold bag");
-        }
-
-        private void ResolvePart2(ILookup<string, (int, string)> rules)
-        {
-            var result = BagRuleReader.HowManyBagsCanCarry("shiny gold", rules);
-            _output.WriteLine($"\tOne shiny gold bag can hold up to {result} bags");
-        }
-    }
-
-
     public static class BagRuleReader
     {
         public static ILookup<string, (int, string)> ReadRules(IEnumerable<string> data)
@@ -115,5 +75,4 @@ namespace AdventOfCode2020.DailyChallenges.Day07
             }
         }
     }
-
 }
